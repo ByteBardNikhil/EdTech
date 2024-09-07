@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../multimedia/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="top">
+    <!-- Header/Navbar  -->
+    <header>
+      <div class="container">
+        <nav class="main-nav">
+          <!-- logo  -->
+          <div class="logo">
+            <img src="../multimedia/Logo.png" alt="Logo" />
+          </div>
+          <!-- navigation-list  -->
+          <div class="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navlist">
+            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>
+          Best <em>EdTech</em> Company <br />
+          &amp; programming <em>Services</em>
+        </h2>
+        <div class="devider"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ad
+          doloribus quia, velit molestiae repellat minus fugit nesciunt ratione
+          deserunt accusantium facilis et pariatur, iusto amet eius repudiandae.
+          Laudantium, quaerat. Impedit sint eum vitae quos voluptas, esse
+          aliquam ut repudiandae dolores necessitatibus eligendi neque incidunt
+          laudantium voluptate praesentium officiis sequi expedita perferendis
+          minus labore unde sit optio. Saepe, cumque ducimus. Consectetur eos
+        </p>
+      </div>
+    </section>
+    <!-- Services  -->
+    <!-- Banner  -->
+    <!-- About Us  -->
+    <!-- Learning Plan Form   -->
+    <!-- Testimonials  -->
+    <!-- Contact Us  -->
+    <!-- Inquiry Us  -->
+    <!-- Footer  -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navList = document.querySelector(".navlist");
+
+        menuIcon.addEventListener("click", function () {
+          this.classList.toggle("active");
+          navList.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
