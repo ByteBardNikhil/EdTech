@@ -21,8 +21,6 @@ body {
   overflow-x: hidden;
 }
 /* header section starts  */
-header {
-}
 
 .main-nav {
   display: flex;
@@ -98,8 +96,17 @@ header {
   color: var(--primary-color);
   transform: scale(1.1);
 }
+@media (max-width: 60rem) {
+  .hero-text {
+    display: inline;
+  }
+  .hero-text p {
+    height: 10vh;
+    width: 100%;
+  }
+}
 
-@media (max-width: 700px) {
+@media (max-width: 38rem) {
   .menu-icon {
     display: block;
   }
@@ -138,11 +145,14 @@ header {
 /* hero section starts  */
 .hero {
   background-image: url("../multimedia/hero.png");
-  width: 100%;
+  width: 99%;
   height: 80vh;
   left: 0;
   background-size: 100% 100%;
   animation: slide-in 2s ease-out forwards;
+  margin: 0px auto;
+  border-radius: 1rem;
+  object-fit: scale-down;
 }
 @keyframes slide-in {
   0% {
