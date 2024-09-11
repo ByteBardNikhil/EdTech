@@ -200,6 +200,7 @@ header {
   font-size: 2rem;
   color: var(--primary-color);
 }
+
 .item-container {
   margin-top: 4rem;
   display: flex;
@@ -216,6 +217,10 @@ header {
     inset -0.2rem 0px 0.4rem rgba(0, 0, 0, 0.1),
     0px 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
+  transition: all 0.5s;
+}
+.service-item:hover {
+  transform: scale(1.02);
 }
 .service-item i {
   transition: all 0.5s;
@@ -235,10 +240,63 @@ header {
 
 /* Services Section ends  */
 
+/* Banner section starts  */
+.banner-container {
+  border: 1px solid black;
+  width: 98%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.banner {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.banner-heading {
+  padding: 3rem;
+  font-size: 5rem;
+}
+.banner .banner-buttons {
+  display: flex;
+  background-color: #181d30;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.banner .banner-buttons div {
+  padding: 2rem;
+
+  border-radius: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: var(--primary-color);
+  box-shadow: inset 0px 0.2rem 0.4rem rgba(207, 195, 195, 0.1),
+    inset -0.2rem 0px 0.4rem rgba(0, 0, 0, 0.1),
+    0px 0.2rem 0.4rem rgba(202, 179, 179, 0.1);
+}
+.banner .banner-buttons div:hover {
+  transform: scale(1.1);
+}
+.banner .banner-buttons div a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+/* Banner section ends */
+
 @media (max-width: 60rem) {
+  .hero {
+    background-image: url("../multimedia/hero2.png");
+  }
+  .banner {
+    grid-template-columns: 100%;
+  }
   .service-item {
     width: 90%;
   }
+
   .hero-text {
     display: inline;
   }
@@ -249,6 +307,9 @@ header {
 }
 
 @media (max-width: 38rem) {
+  .hero {
+    background-image: url("../multimedia/hero3.png");
+  }
   .devider {
     margin: auto;
   }
